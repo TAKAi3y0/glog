@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
-  def new 
+  def new
+    @article = Article.new
   end
 
   def create
