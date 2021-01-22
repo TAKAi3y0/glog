@@ -1,24 +1,34 @@
-# README
+# アプリケーション名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+glog
 
-Things you may want to cover:
+# アプリケーション概要
 
-* Ruby version
+BLOGアプリケーションを作成しました。
 
-* System dependencies
+# URL
 
-* Configuration
+# 作成目的
 
-* Database creation
+ゲーム内の有用な情報を日々更新しやすいように、項目に沿って記録するため作りました。
 
-* Database initialization
+# データベース設計(ER図)
 
-* How to run the test suite
+<img width="434" alt="5452944e73711a36c0ae763ea7a41f91" src="https://user-images.githubusercontent.com/73812712/103096683-180c9700-4648-11eb-8826-a0494e4920f2.png">
 
-* Services (job queues, cache servers, search engines, etc.)
+# ローカルでの動作方法
 
-* Deployment instructions
+Rubyのバージョン  
+6.0.0
 
-* ...
+追加パッケージ  
+・特になし
+
+# テーブル設計
+
+## articles テーブル
+
+| Column       | Type       | Options                        |
+| ----------   | ---------- | ------------------------------ |
+| title        | string     | null: false                    |
+| text         | text       | null: false                    |
