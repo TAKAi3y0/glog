@@ -20,6 +20,10 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    url = @article.youtube_url
+    url = url.last(11)
+    binding.pry
+    @article.youtube_url = url
   end
 
   def edit
@@ -43,7 +47,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text)
+    params.require(:article).permit(:title, :text, :image, :youtube_url)
   end
 
 end
