@@ -1,0 +1,13 @@
+<h1><%= link_to 'GLog', "/" %></h1>
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @article.youtube_url %>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div>
+  <%= image_tag @article.image.variant(resize: '500x500'), class: 'article-image' if @article.image.attached? %>
+</div>
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
