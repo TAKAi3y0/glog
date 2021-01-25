@@ -22,7 +22,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     url = @article.youtube_url
     url = url.last(11)
-    binding.pry
     @article.youtube_url = url
   end
 

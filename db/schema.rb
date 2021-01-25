@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2021_01_23_222936) do
     t.string "title"
     t.text "text"
     t.string "image"
-    t.string "youtube_url"
+    t.string "youtube_url", default: "", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
