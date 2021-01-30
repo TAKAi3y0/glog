@@ -60,3 +60,6 @@ gem 'pry-rails'
 
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
+
+gem 'rspec-rails'
+gem 'factory_bot_rails'
