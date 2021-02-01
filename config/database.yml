@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: glog_production
-  username: glog
-  password: <%= ENV['GLOG_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
