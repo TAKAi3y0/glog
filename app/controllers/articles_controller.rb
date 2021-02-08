@@ -1,5 +1,4 @@
 class ArticlesController < ApplicationController
-
   def index
     @articles = Article.all
   end
@@ -12,9 +11,9 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
 
     if @article.save
-        redirect_to root_path
+      redirect_to root_path
     else
-        render 'new'
+      render 'new'
     end
   end
 
@@ -45,8 +44,8 @@ class ArticlesController < ApplicationController
   end
 
   private
+
   def article_params
     params.require(:article).permit(:title, :text, :image, :youtube_url)
   end
-
 end

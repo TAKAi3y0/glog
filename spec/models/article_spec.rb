@@ -27,9 +27,9 @@ RSpec.describe Article, type: :model do
       end
 
       it 'タイトルが4文字以下だと記事は保存できない' do
-        @article.title = "aaaa"
+        @article.title = 'aaaa'
         @article.valid?
-        expect(@article.errors.full_messages).to include("Title is too short (minimum is 5 characters)")
+        expect(@article.errors.full_messages).to include('Title is too short (minimum is 5 characters)')
       end
 
       it 'テキストがないと記事は保存できない' do
@@ -39,9 +39,9 @@ RSpec.describe Article, type: :model do
       end
 
       it 'urlがyoutubeの動画urlでないと記事は保存できない' do
-        @article.youtube_url = "a"
+        @article.youtube_url = 'a'
         @article.valid?
-        expect(@article.errors.full_messages).to include("Youtube url URLが正しくありません")
+        expect(@article.errors.full_messages).to include('Youtube url URLが正しくありません')
       end
     end
   end
