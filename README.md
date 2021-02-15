@@ -61,12 +61,3 @@ Rubyのバージョン
 | text        | text       | null: false                    |
 | image       | string     |                                |
 | youtube_url | string     |                                |
-
-## users テーブル
-
-| Column      | Type       | Options                        |
-| ----------- | ---------- | ------------------------------ |
-| nickname    | string     | null: false                    |
-| email       | string     | null: false                    |
-| password    | string     | null: false                    |
-|        | text       | null: false                    |
